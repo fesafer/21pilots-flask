@@ -1,0 +1,324 @@
+body{
+    background-color: rgb(135,49,50) !important;
+    color: rgb(210,207,189);
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.piazzolla {
+  font-family: "Piazzolla", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.title {
+    font-family: Bebas Neue;
+    font-size: 45px;
+    font-weight: bold;
+    padding: 10px;
+    color: rgb(165, 163, 150);
+}
+
+.text-content-left {
+    font-family: Piazzolla;
+    font-weight: bold;
+    flex: 1;
+    font-size: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 0 0; /* 0 na esquerda para o link colar no canto, 15px na direita pro logo respirar */
+    background-color: rgb(230,65,59);
+    border-radius: 15px;
+    height: 60px;
+    overflow: hidden; /* Corta qualquer excesso do hover nas curvas */
+    box-sizing: border-box;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    height: 100%;
+    display: flex;
+}
+
+.nav-links a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 24px;
+    color: rgb(210,207,189);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Garante que o primeiro link acompanhe a curva esquerda da navbar */
+.nav-links li:first-child a {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.nav-links a:hover {
+    color: rgb(32,32,32);
+    background-color: rgb(253,230,30);
+}
+
+.nav-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.top-main {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+    height: auto;
+}
+
+.secao-flex-left{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px;
+}
+
+.img-right{
+    display: flex;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-right:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0, 0.2);
+}
+
+.link-img {
+    display: inline-block ;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.secao-flex-right{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 40px;
+    padding: 10px;
+}
+
+.text-content-right {
+    font-family: Piazzolla;
+    font-weight: bold;
+    flex: 1;
+    text-align: right;
+    font-size: 20px;
+}
+
+.img-left{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-left:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0, 0.2);
+}
+
+.dema-main {
+    display: block;
+    margin-top: 0;
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.saga-banner {
+    text-align: center;
+    color: rgb(253,230,30);
+    font-family: Bebas Neue;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 100px;
+    margin-top: 0;
+    margin-bottom: 4px;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6); 
+}
+
+.img-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100vw;
+    margin: 0;
+}
+
+.img-center img {
+    max-width: 100px;
+    height: auto;
+}
+
+.form-label {
+    font-family: Piazzolla;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 15px;
+}
+
+.form-label input {
+    padding: 12px 16px;
+    font-size: 16px;
+    font-family: Piazzolla;
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+}
+
+.form-label textarea {
+    padding: 12px;
+    width: 100%;
+    max-width: 400px;
+    min-height: 120px;
+    box-sizing: border-box;
+}
+.form-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    font-family: Piazzolla;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        padding: 8px 12px;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        padding: 6px 10px;
+        border-radius: 8px !important;
+    }
+
+    .nav-img {
+        display: none;
+    }
+
+    .saga-banner {
+        font-size: 46px;
+        letter-spacing: 1px;
+    }
+
+    .title {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .dema-main,
+    .top-main {
+        width: 100%;
+    }
+
+    .secao-flex-left,
+    .secao-flex-right {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 5px;
+    }
+
+    .text-content-left,
+    .text-content-right {
+        font-size: 17px;
+        text-align: justify;
+        width: 100%;
+    }
+
+    .img-left,
+    .img-right {
+        max-width: 180px;
+        margin: 0 auto;
+    }
+
+    .img-center {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .img-center img {
+        max-width: 50px;
+    }
+
+    .form-label {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .form-label input,
+    .form-label textarea {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .form-div form {
+        width: 100%;
+        max-width: 360px;
+        padding: 0 10px;
+    }
+}
